@@ -22,6 +22,24 @@
     transform-origin: bottom left;
 }
 
+.brand__anim {
+    animation: fadeIn 0.5s backwards 
+        ease-in-out;
+        animation-delay: 300ms;
+    transform-origin: top center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scaleY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
 @keyframes pop {
     0% {
         scale: 0

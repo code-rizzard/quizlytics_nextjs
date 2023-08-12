@@ -15,7 +15,7 @@ export default function Home() {
           <h2
           className='text-2xl font-extrabold text-onBg-dark'
           >
-            <span className='text-primary'>
+            <span className='text-primary text-3xl inline-block brand__anim'>
               Empowering Curiosity
             </span>        
             <br />
