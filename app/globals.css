@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.highlight__circle-1 {
+    @apply top-[55%] left-[80%] ;
+}
+.highlight__circle-2 {
+    @apply top-[-40%] left-[100%] ;
+
+}
+.highlight__circle-3 {
+    @apply top-[35%] left-[90%] ;
+}
+.highlight__circle-4 {
+    @apply top-[30%] left-0 ;
+}

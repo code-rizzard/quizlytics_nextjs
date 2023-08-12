@@ -1,3 +1,4 @@
+import { highlightsCircleImageInfo } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -31,35 +32,18 @@ export default function Home() {
           >Get Started</Link>
         </div>
 
-        <Image
-        className='absolute top-[0%] right-[0%] translate-x-[50%] translate-y-[-50%]  z-[-10]'
-        src="/images/circle.png"
-        width={156}
-        height={156}
-        alt="Circle"
-        />
-        <Image
-        className='absolute top-[35%] left-[90%] translate-x-[-50%] translate-y-[50%] z-[-10]'
-        src="/images/circle.png"
-        width={36}
-        height={36}
-        alt="Circle"
-        />
-        <Image
-        className='absolute top-[55%] left-[80%] translate-x-[-50%] translate-y-[50%] z-[-10]'
-        src="/images/circle.png"
-        width={12}
-        height={12}
-        alt="Circle"
-        />
-        
-        <Image
-        className='absolute bottom-[30%] left-0 translate-x-[-50%] translate-y-[50%] z-[-10]'
-        src="/images/circle.png"
-        width={128}
-        height={128}
-        alt="Circle"
-        />
+        {
+          highlightsCircleImageInfo.map((val, index) => (
+            <Image
+            className={`absolute z-[-10] translate-x-[-50%] translate-y-[50%] highlight__circle-${index+1}`}
+            src="/images/circle.png"
+            width={val}
+            height={val}
+            alt="Circle"
+            />
+          ))
+        }
+       
       </section>
       <section
       className='px-6 py-2 flex flex-col gap-6 items-center'
