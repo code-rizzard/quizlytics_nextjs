@@ -107,15 +107,13 @@ export default function Home() {
         <p>
           Have questions, suggestions, or feedback? We're here to help. Feel free to reach out to us using the contact information below
         </p>
-        <p>
-          <span className='font-bold'>Contact Information:</span>
-          <br />
-          <ul className='list-disc pl-6'>
-            <li>Email: contact@quizlytics.com</li>            
-            <li>Phone: +1 (123) 456-7890</li>
-            <li>Address: 123 Quiz Street, Cityville, QZ 98765</li>
-          </ul>
-        </p>
+        <span className='font-bold'>Contact Information:</span>
+        <br />
+        <ul className='list-disc pl-6'>
+          <li>Email: contact@quizlytics.com</li>            
+          <li>Phone: +1 (123) 456-7890</li>
+          <li>Address: 123 Quiz Street, Cityville, QZ 98765</li>
+        </ul>
       </section>
     </main>
   )
