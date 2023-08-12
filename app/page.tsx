@@ -99,6 +99,7 @@ export default function Home() {
       </section>
       <section
       className='bg-primary-lt w-full text-onPrimary py-8 px-6 flex flex-col gap-3'
+      id='contact'
       >
         <h2
         className='text-2xl font-bold'
