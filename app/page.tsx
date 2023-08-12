@@ -28,7 +28,7 @@ export default function Home() {
           </span>
           <Link 
           href="/"
-          className='bg-primary text-onPrimary px-6 py-3 rounded-md font-bold text-2xl max-w-sm border-b-4 border-primary-dark'
+          className='button-primary px-6 py-3 rounded-md font-bold text-2xl max-w-sm '
           >Get Started</Link>
         </div>
 
