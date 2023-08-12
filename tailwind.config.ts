@@ -10,10 +10,13 @@ const config: Config = {
     extend: {
       colors: {
         onBg: {
-          default: "#1A1A1A",
+          DEFAULT: "#1A1A1A",
           dark: "#0A0A0A",
           lt: "#2c2c2c",
           ltr: "#DFDFDF",
+        },
+        onPrimary: {
+          DEFAULT: "#FC",
         },
         primary: {
           DEFAULT: "#7B2CBF",
