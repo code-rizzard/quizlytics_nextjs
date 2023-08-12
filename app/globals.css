@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .highlight__circle-12 {
-    @apply top-[55%] left-[80%] ;
+    @apply top-[60%] left-[78%] ;
 }
 .highlight__circle-156 {
     @apply top-[-40%] left-[100%] ;
@@ -16,14 +16,30 @@
     @apply top-[0%] left-[-5%] ;
 }
 
+:root {
+    --pop-scale: 1;
+    --pop-scale-over: 1.1;
+}
+
+@media screen and (max-width: 420px) {
+    :root {
+        --pop-scale: 0.5;
+        --pop-scale-over: 0.6;
+    }
+    .highlight__circle {
+        scale: var(--pop-scale);
+    }
+
+}
+
 .highlight__circle-anim {
-    animation: pop 0.8s backwards 
+    animation: pop 1.5s both 
         cubic-bezier(.17,.67,.19,.93);
     transform-origin: bottom left;
 }
 
 .brand__anim {
-    animation: fadeIn 0.5s backwards 
+    animation: fadeIn 0.8s backwards 
         ease-in-out;
         animation-delay: 300ms;
     transform-origin: top center;
@@ -52,9 +68,11 @@
         scale: 0
     }
     80% {
-        scale: 1.1
+        scale: var(--pop-scale-over)
+        /* scale: var(1.1) */
     }
     100% {
-        scale: 1
+        scalel: var(--pop-scale)
+        /* scalel: var(1) */
     }
 }
