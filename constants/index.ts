@@ -1,1 +1,1 @@
-export const highlightsCircleImageInfo = [12, 156, 36, 128];
+export const highlightsCircleImageInfo = [156, 36, 12, 128];

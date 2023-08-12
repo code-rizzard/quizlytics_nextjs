@@ -2,16 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-.highlight__circle-1 {
+.highlight__circle-12 {
     @apply top-[55%] left-[80%] ;
 }
-.highlight__circle-2 {
+.highlight__circle-156 {
     @apply top-[-40%] left-[100%] ;
 
 }
-.highlight__circle-3 {
+.highlight__circle-36 {
     @apply top-[35%] left-[90%] ;
 }
-.highlight__circle-4 {
+.highlight__circle-128 {
     @apply top-[30%] left-0 ;
+}
+
+.highlight__circle-anim {
+    animation: pop 0.8s backwards 
+        cubic-bezier(.17,.67,.19,.93);
+    transform-origin: bottom left;
+}
+
+@keyframes pop {
+    0% {
+        scale: 0
+    }
+    80% {
+        scale: 1.1
+    }
+    100% {
+        scale: 1
+    }
 }

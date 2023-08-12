@@ -35,7 +35,8 @@ export default function Home() {
         {
           highlightsCircleImageInfo.map((val, index) => (
             <Image
-            className={`absolute z-[-10] translate-x-[-50%] translate-y-[50%] highlight__circle-${index+1}`}
+            style={{animationDelay: `${(index+1) * 0.15}s`}}
+            className={`absolute z-[-10] highlight__circle-anim translate-x-[-50%] translate-y-[50%] highlight__circle-${val}`}
             src="/images/circle.png"
             width={val}
             height={val}
