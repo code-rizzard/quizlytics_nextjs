@@ -12,8 +12,8 @@
 .highlight__circle-36 {
     @apply top-[35%] left-[90%] ;
 }
-.highlight__circle-128 {
-    @apply top-[30%] left-0 ;
+.highlight__circle-200 {
+    @apply top-[0%] left-[-5%] ;
 }
 
 .highlight__circle-anim {
