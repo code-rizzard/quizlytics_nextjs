@@ -47,10 +47,10 @@ export default function Home() {
        
       </section>
       <section
-      className='px-6 py-2 flex flex-col gap-6 items-center'
+      className='px-6 py-2 flex flex-row justify-center gap-6 items-center flex-wrap w-full'
       >
         <article
-        className='bg-onBg-ltr py-4 px-6 rounded-lg'
+        className='bg-onBg-ltr py-4 px-6 rounded-lg max-w-[300px]'
         >
           <h3
           className='text-xl font-extrabold text-onBg-dark'
@@ -60,7 +60,7 @@ export default function Home() {
           </p>
         </article>
         <article
-        className='bg-onBg-ltr py-4 px-6 rounded-lg'
+        className='bg-onBg-ltr py-4 px-6 rounded-lg max-w-[300px]'
         >
           <h3
           className='text-xl font-extrabold text-onBg-dark'
@@ -70,7 +70,7 @@ export default function Home() {
           </p>
         </article>
         <article
-        className='bg-onBg-ltr py-4 px-6 rounded-lg'
+        className='bg-onBg-ltr py-4 px-6 rounded-lg max-w-[300px]'
         >
           <h3
           className='text-xl font-extrabold text-onBg-dark'
