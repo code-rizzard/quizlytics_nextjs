@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en"
-    className='bg-neutral'
+    className='bg-neutral '
     >
       <body className={inter.className}>
         <Header/>
