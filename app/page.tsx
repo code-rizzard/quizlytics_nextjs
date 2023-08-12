@@ -61,6 +61,42 @@ export default function Home() {
         alt="Circle"
         />
       </section>
+      <section
+      className='px-6 py-2 flex flex-col gap-6 items-center'
+      >
+        <article
+        className='bg-onBg-ltr py-4 px-6 rounded-lg'
+        >
+          <h3
+          className='text-xl font-extrabold text-onBg-dark'
+          >Unlock Your Mind's Potential</h3>
+          <p>
+          Discover a new dimension of learning and fun with Quizlytics - where quizzes evolve into insights.
+          </p>
+        </article>
+        <article
+        className='bg-onBg-ltr py-4 px-6 rounded-lg'
+        >
+          <h3
+          className='text-xl font-extrabold text-onBg-dark'
+          >Quizzes Reimagined, Knowledge Amplified</h3>
+          <p>
+          Elevate your learning experience with Quizlytics, where quizzes fuse with analytics to provide you with meaningful insights.
+          </p>
+        </article>
+        <article
+        className='bg-onBg-ltr py-4 px-6 rounded-lg'
+        >
+          <h3
+          className='text-xl font-extrabold text-onBg-dark'
+          >
+            Quiz, Learn, Analyze: All in One Place
+          </h3>
+          <p>
+          Dive into the world of knowledge exploration with Quizlytics, the app that transforms quizzes into pathways to deeper insights.
+          </p>
+        </article>
+      </section>
     </main>
   )
 }
