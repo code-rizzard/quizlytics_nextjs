@@ -16,7 +16,7 @@ const config: Config = {
           ltr: "#DFDFDF",
         },
         onPrimary: {
-          DEFAULT: "#FC",
+          DEFAULT: "#FCFCFC",
         },
         primary: {
           DEFAULT: "#7B2CBF",
@@ -25,8 +25,7 @@ const config: Config = {
           ltr: "#E0AAFF",
         },
         neutral: {
-          DEFAULT: "#FC",
-          1: "#FC",
+          DEFAULT: "#FCFCFC",
         },
       },
       backgroundImage: {
