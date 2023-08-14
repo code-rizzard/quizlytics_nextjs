@@ -121,13 +121,14 @@ function HighlightsSection() {
           {
           highlightsCircleImageInfo.map((val, index) => (
               <Image
-            style={{animationDelay: `${(index+1) * 0.15}s`}}
-            className={` highlight__circle absolute z-[-10] select-none  highlight__circle-anim translate-x-[-50%] translate-y-[50%] highlight__circle-${val}`}
-            src="/images/circle.png"
-            width={val}
-            height={val}
-            alt="Circle"
-            />
+                aria-hidden
+                style={{animationDelay: `${(index+1) * 0.15}s`}}
+                className={` highlight__circle absolute z-[-10] select-none  highlight__circle-anim translate-x-[-50%] translate-y-[50%] highlight__circle-${val}`}
+                src="/images/circle.png"
+                width={val}
+                height={val}
+                alt="Circle"
+              />
           ))
         }
       </section>
