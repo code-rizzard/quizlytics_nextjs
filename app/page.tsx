@@ -2,11 +2,57 @@ import { highlightsCircleImageInfo } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 
+
+
 export default function Home() {
   return (
     <main 
     className="">
-      <section
+      <HighlightsSection/>
+      <BenefitsCardSection/>
+      <WhatWeOfferSection/>
+      <WhatPeopleSaySection />
+
+      <ContactsSection/>
+    </main>
+  )
+}
+
+function WhatWeOfferSection() {
+  return (
+    <section
+    className='px-6 my-10 '
+    >
+        <h2 className='font-bold text-onBg-dark text-2xl'>What We Offer</h2>
+      <div
+      className='mt-3'
+      >
+        <article
+        className='bg-onBg-ltr rounded-lg px-4 py-2'
+        >
+          {/* Image here*/}
+          <div>
+            <h4>Hello</h4>
+            <p>
+              lkajsflkasjdfklsadjklfdjasdlkf
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+ )
+}
+
+
+function WhatPeopleSaySection() {
+  return (
+    <div>People say</div>
+  )
+}
+
+function HighlightsSection() {
+  return (
+    <section
       className='py-16 ext-center relative overflow-hidden'
       >
         <div
@@ -31,8 +77,7 @@ export default function Home() {
           className='button-primary px-6 py-3 rounded-md font-bold text-2xl max-w-sm '
           >Get Started</Link>
         </div>
-
-        {
+          {
           highlightsCircleImageInfo.map((val, index) => (
               <Image
             style={{animationDelay: `${(index+1) * 0.15}s`}}
@@ -44,9 +89,13 @@ export default function Home() {
             />
           ))
         }
-       
       </section>
-      <section
+  )
+}
+
+function BenefitsCardSection() {
+  return (
+    <section
       className='px-6 py-2 flex flex-row justify-center gap-6 items-center flex-wrap w-full'
       >
         <article
@@ -82,7 +131,13 @@ export default function Home() {
           </p>
         </article>
       </section>
-      <section
+  )
+}
+
+
+function ContactsSection() {
+  return (
+    <section
       className='bg-primary-lt w-full text-onPrimary py-8 px-6 flex flex-col gap-3'
       id='contact'
       >
@@ -100,6 +155,5 @@ export default function Home() {
           <li>Address: 123 Quiz Street, Cityville, QZ 98765</li>
         </ul>
       </section>
-    </main>
   )
 }
