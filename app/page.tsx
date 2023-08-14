@@ -23,21 +23,62 @@ function WhatWeOfferSection() {
     <section
     className='px-6 my-10 '
     >
-        <h2 className='font-bold text-onBg-dark text-2xl'>What We Offer</h2>
+        <h2 className='font-bold text-onBg-dark text-2xl md:text-3xl'>What We Offer</h2>
       <div
-      className='mt-3'
+      className='mt-3 flex flex-col items-center gap-4'
       >
         <article
-        className='bg-onBg-ltr rounded-lg px-4 py-2'
+        className='bg-onBg-ltr max-w-2xl rounded-lg py-6 px-4 flex max-sm:flex-col md:flex-row gap-6 justify-center items-stretch max-sm:items-center'
         >
-          {/* Image here*/}
-          <div>
-            <h4>Hello</h4>
-            <p>
-              lkajsflkasjdfklsadjklfdjasdlkf
+          <Image
+            src="/images/card_interactive_learning.png"
+            width={92*1.5}
+            height={81*1.5}
+            alt="Card image"
+            className='object-content w-max '
+          /> 
+          <div className='flex flex-col gap-6 flex-grow'>
+            <h4 className='font-bold text-onBg-dark text-lg sm:text-2xl'>Choose Your Quiz</h4>
+            <p className='text-onBg text-md sm:text-lg'>
+            Browse through our diverse collection of quizzes covering a wide range of topics. Select the quiz that piques your interest or aligns with your learning goals.
             </p>
           </div>
         </article>
+        <article
+        className='bg-onBg-ltr max-w-2xl rounded-lg py-6 px-4 flex max-sm:flex-col md:flex-row gap-6 justify-center items-stretch max-sm:items-center'
+        >
+          <Image
+            src="/images/card_community.png"
+            width={90*1.5}
+            height={107*1.5}
+            alt="Card image"
+            className='object-content w-max '
+          /> 
+          <div className='flex flex-col gap-6 flex-grow'>
+            <h4 className='font-bold text-onBg-dark text-lg sm:text-2xl'>Interactive Learning</h4>
+            <p className='text-onBg text-md sm:text-lg'>
+            Engage with the quiz questions in an interactive format. Each question isn't just a test; it's an opportunity to explore concepts and dive deeper into the subject matter.
+            </p>
+          </div>
+        </article>
+        <article
+        className='bg-onBg-ltr max-w-2xl rounded-lg py-6 px-4 flex max-sm:flex-col md:flex-row gap-6 justify-center items-stretch max-sm:items-center'
+        >
+          <Image
+            src="/images/card_choose_quiz.png"
+            width={105*1.5}
+            height={82*1.5}
+            alt="Card image"
+            className='object-content w-max '
+          /> 
+          <div className='flex flex-col gap-6 flex-grow'>
+            <h4 className='font-bold text-onBg-dark text-lg sm:text-2xl'>Community and Sharing</h4>
+            <p className='text-onBg text-md sm:text-lg'>
+            Join a community of learners who share your passion for knowledge. Discuss quiz topics, share insights, and inspire others with your learning journey.
+            </p>
+          </div>
+        </article>
+
       </div>
     </section>
  )
