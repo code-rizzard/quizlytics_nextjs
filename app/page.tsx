@@ -1,3 +1,4 @@
+import WhatPeopleSaySection from '@/components/page/landing/WhatPeopleSaySection'
 import { highlightsCircleImageInfo } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -85,11 +86,7 @@ function WhatWeOfferSection() {
 }
 
 
-function WhatPeopleSaySection() {
-  return (
-    <div>People say</div>
-  )
-}
+
 
 function HighlightsSection() {
   return (
