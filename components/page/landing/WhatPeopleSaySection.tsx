@@ -53,7 +53,7 @@ export default function WhatPeopleSaySection() {
     return (
       <section className="py-6">
         <h3 className='text-2xl text-onBg-dark font-bold mx-6'>What People Say About Us</h3>
-        <div className='flex flex-row gap-20 overflow-x-scroll px-12' ref={scrollRef}>
+        <div  className='no-scrollbar flex flex-row gap-20 overflow-x-scroll px-12' ref={scrollRef} >
           {
             data.map((d, i) => (
               <PeopleSayCard data={d} key={i} />

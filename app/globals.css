@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
 .highlight__circle-12 {
     @apply top-[60%] left-[78%] ;
 }
@@ -15,6 +19,8 @@
 .highlight__circle-200 {
     @apply top-[0%] left-[-5%] ;
 }
+
+
 
 :root {
     --pop-scale: 1;
