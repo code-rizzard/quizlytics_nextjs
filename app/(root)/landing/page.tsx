@@ -111,7 +111,7 @@ function WhatWeOfferSection() {
               Fueling your quest for knowledge through interactive exploration and insightful analysis
             </span>
             <Link 
-            href="/"
+            href="/sign-up"
             className='button-primary px-6 py-3 rounded-md font-bold text-2xl max-w-sm '
             >Get Started</Link>
           </div>
