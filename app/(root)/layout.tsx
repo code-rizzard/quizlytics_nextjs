@@ -1,5 +1,5 @@
 import Footer from '@/components/shared/Footer'
-import './globals.css'
+import '@/app/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from '@/components/shared/Header'
@@ -21,7 +21,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en"
       className='bg-neutral '
-      >
+      > 
         <body className={`${inter.className} flex flex-col h-screen`}>
           <Header/>
           <div
