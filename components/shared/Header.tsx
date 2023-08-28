@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Header = () => {
   return (
     <header
@@ -6,9 +8,11 @@ const Header = () => {
         <nav
         className="px-6 py-3 w-full h-full flex flex-row justify-between items-center"
         >
-            <h2
-            className="text-xl font-extrabold text-primary-dark"
-            >Quizlytics</h2>
+            <Link href="/">
+              <h2
+              className="text-xl font-extrabold text-primary-dark"
+              >Quizlytics</h2>
+            </Link>
             <button type="button"
             className="text-primary hover:text-primary-dark sm:hidden"
             >
